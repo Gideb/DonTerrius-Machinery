@@ -1,9 +1,18 @@
 
-const hiddenServices = document.querySelector(".hiddenServices");
-hiddenServices.style.display = 'none';
+const showMoreBtn = document.getElementById("showMore");
+const serviceGrids = document.getElementById("serviceGrids");
 
-const showServices = document.querySelector(".btn-otherServices");
-showServices.addEventListener("click", () => {
-    hiddenServices.style.display = "grid";
-    showServices.style.visibility = "hidden";
-})
+showMoreBtn.addEventListener("click", () => {
+    serviceGrids.classList.add('show-all');
+    showMoreBtn.style.visibility = "hidden";
+});
+
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}

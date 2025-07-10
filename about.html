@@ -3,15 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DTM-About Page</title>
+    <title>DTM-ABOUT US</title>
     <link rel="stylesheet" href="dtm.css" />
     <link rel="icon" href="img/icon.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="container">
       <header>
         <div class="header-section">
-          <img src="./img/DTM-Logo.png" alt="DTM Logo" width="100" />
+          <a href="#"
+            ><img src="./img/DTM-Logo.png" alt="DTM Logo" width="80"
+          /></a>
 
           <nav>
             <ul>
@@ -22,7 +25,17 @@
             </ul>
           </nav>
         </div>
+
+        <section id="#">
+          <div class="landing">
+            <div class="landing-text">
+              <h2>DON TERRIUS <span>MACHINERY</span></h2>
+              <p>Dependable Heavy Equipment</p>
+            </div>
+          </div>
+        </section>
       </header>
+
       <main>
         Welcome to Don Terrius Machinery. At Don Terrius Machinery, we're more
         than just a heavy machinery rental and operations company — we're your
@@ -99,14 +112,25 @@
           <div>
             <form class="contact-form" action="">
               <legend>Contact Form</legend>
-              <input type="text" id="form-name" placeholder="Your Name" />
-              <input type="email" id="form-email" placeholder="Your Email" />
+              <input
+                type="text"
+                id="form-name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                id="form-email"
+                placeholder="Your Email"
+                required
+              />
               <textarea
                 name="message"
                 id="message"
                 placeholder="Your message"
                 rows="5"
                 cols="25"
+                required
               ></textarea>
               <button class="btn-submit" type="submit">Submit</button>
             </form>
@@ -142,3 +166,4 @@
     <script src="dtm.js"></script>
   </body>
 </html>
+
