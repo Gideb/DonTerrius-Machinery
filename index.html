@@ -6,39 +6,15 @@
     <title>DON TERRIUS MACHINERY</title>
     <link rel="stylesheet" href="dtm.css" />
     <link rel="icon" href="img/icon.jpeg" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="container">
-      <header>
-        <div class="header-section">
-          <a href="#"
-            ><img src="./img/DTM-Logo.png" alt="DTM Logo" width="80"
-          /></a>
-
-          <nav class="topnav">
-            <ul>
-              <li><a href="#">HOME</a></li>
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="services.html">SERVICES</a></li>
-              <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-          </nav>
-
-          <a href="javascript:void(0);" class="hamburger-icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>
-
-        <section id="#">
-          <div class="landing">
-            <div class="landing-text">
-              <h2>DON TERRIUS <span>MACHINERY</span></h2>
-              <p>Dependable Heavy Equipment</p>
-            </div>
-          </div>
-        </section>
-      </header>
+      <!-- header content will be loaded from external header file -->
+      <div id="header"></div>
 
       <main>
         <section id="about">
@@ -78,7 +54,7 @@
               <h4>Heavy Equipment Rental</h4>
               <p>
                 Rental of bulldozers, forklifts, and other heavy equipment for
-                construction, mining, and more.
+                mining, construction, and more.
               </p>
               <a href="#"><button class="btn-grid">Book Equipment</button></a>
             </div>
@@ -89,8 +65,8 @@
               />
               <h4>Excavation Services</h4>
               <p>
-                Site preparation, digging, and excavation services for various
-                industries.
+                Excavation and preparation of sites for construction, mining and
+                other industries.
               </p>
               <a href="#"><button class="btn-grid">Book Equipment</button></a>
             </div>
@@ -108,8 +84,8 @@
               <img src="img/DTM-demolition.jpeg" alt="Wrecking Ball Crane" />
               <h4>Demolition Services</h4>
               <p>
-                Efficient and safe demolishing Solutions for your buildings,
-                with minimum disruption.
+                With precision and power, we provide efficient and safe
+                demolishing solutions for your buildings.
               </p>
               <a href="#"><button class="btn-grid">Book Equipment</button></a>
             </div>
@@ -117,9 +93,8 @@
               <img src="img/DTM-haulage.jpeg" alt="haulage truct" />
               <h4>Haulage Services</h4>
               <p>
-                Reliable transportation solutions for heavy equipment,
-                materials, and goods. We ensure safe, efficient and timely
-                delivery to destinations.
+                Timely and Reliable transportation solutions for heavy
+                equipment, materials, and goods to destinations.
               </p>
               <a href="#"><button class="btn-grid">Book Equipment</button></a>
             </div>
@@ -130,8 +105,8 @@
               />
               <h4>Construction Services</h4>
               <p>
-                Expert building and infrastructure solutions. From site
-                preparation to project completion.
+                From site preparation to project completion, we provide expert
+                building and infrastructure solutions.
               </p>
               <a href="#"><button class="btn-grid">Book Equipment</button></a>
             </div>
@@ -140,62 +115,8 @@
           <button id="showMore" class="btn-otherServices">Show More</button>
         </section>
       </main>
-      <footer>
-        <h3>CONTACT US</h3>
-        <div class="footer-div">
-          <div>
-            <form class="contact-form" action="">
-              <legend>Contact Form</legend>
-              <input
-                type="text"
-                id="form-name"
-                placeholder="Your Name"
-                required
-              />
-              <input
-                type="email"
-                id="form-email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Your message"
-                rows="5"
-                cols="25"
-                required
-              ></textarea>
-              <button class="btn-submit" type="submit">Submit</button>
-            </form>
-          </div>
-          <div>
-            <nav>
-              <ul class="footer-navigation">
-                <li><a href="#">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="services.html">SERVICES</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="address">
-            <address>
-              <h5>Don Terrius Machinery</h5>
-              <p>Accra, Ghana</p>
-              <p>Phone: <a href="tel:+233595615626">+233 59 561 5626</a></p>
-              <p>
-                Email:
-                <a href="mailto:info@donterriusmachinery.com"
-                  >info@donterriusmachinery.com</a
-                >
-              </p>
-            </address>
-          </div>
-        </div>
-
-        <p>&copy; 2025 Don Terrius Machinery. All rights reserved.</p>
-      </footer>
+      <!-- footer content will be loaded from external footer file -->
+      <div id="footer"></div>
     </div>
     <script src="dtm.js"></script>
   </body>

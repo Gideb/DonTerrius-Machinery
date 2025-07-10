@@ -1,3 +1,13 @@
+//load header and footer files
+fetch("header.html")
+  .then((response) => response.text())
+  .then((data) => (document.getElementById("header").innerHTML = data));
+
+fetch("footer.html")
+  .then((response) => response.text())
+  .then((data) => (document.getElementById("footer").innerHTML = data));
+
+
 
 const showMoreBtn = document.getElementById("showMore");
 const serviceGrids = document.getElementById("serviceGrids");
@@ -7,12 +17,4 @@ showMoreBtn.addEventListener("click", () => {
     showMoreBtn.style.visibility = "hidden";
 });
 
-
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+document.querySelector(".hamburger-icon").style.display = "none"
