@@ -25,7 +25,7 @@ ul {
 }
 
 ul {
-  margin: 40px 0 0 30em;
+  margin: 40px 0 0 27em;
 }
 
 li {
@@ -52,13 +52,14 @@ li a:hover {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
+  height: 75vh;
 }
 
 .landing-text {
   text-align: center;
-  padding-top: 200px;
+  padding-top: 300px;
   padding-left: 60px;
-  color: whitesmoke;
+  color: #eee;
 }
 
 h2,
@@ -256,7 +257,7 @@ address {
   font-size: 13px;
 }
 
-address a{
+address a {
   color: #eee;
 }
 
@@ -506,8 +507,8 @@ a:focus,
     font-size: 15px;
   }
   .landing-text {
-    padding-top: 100px;
-    height: 45vh;
+    padding-top: 200px;
+    height: 65vh;
   }
   h2,
   span {
@@ -625,9 +626,9 @@ a:focus,
   textarea {
     width: 40ch;
   }
-  .btn-contact-form-submit{
-padding: 10px;
-margin-top: -20px;
+  .btn-contact-form-submit {
+    padding: 10px;
+    margin-top: -20px;
   }
 }
 /* mobile view*/
@@ -728,7 +729,7 @@ margin-top: -20px;
     width: 100%;
     margin-left: 20px;
   }
-    .btn-goto-Services {
+  .btn-goto-Services {
     position: relative;
     left: 20%;
   }
@@ -741,7 +742,6 @@ margin-top: -20px;
   }
 
   .newsletter-input {
-    
     padding: 15px;
     margin-top: 10px;
   }
@@ -755,7 +755,7 @@ margin-top: -20px;
   .quickLinks-div {
     padding: 20px;
     display: block;
-    
+
     text-align: center;
   }
   .footer-navigation {
@@ -764,11 +764,9 @@ margin-top: -20px;
     align-items: center;
     margin-left: 10px;
   }
-  .footer-navigation li a{
+  .footer-navigation li a {
     margin: 0;
-   
   }
-
 }
 
 @media only screen and (max-width: 375px) {
