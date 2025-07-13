@@ -41,7 +41,7 @@ a {
 }
 
 li a:hover {
-  color: #2c1864;
+  color: #222831;
 }
 
 /* home page */
@@ -116,7 +116,7 @@ button {
 
 button:hover {
   background: linear-gradient(180deg, #e68e02, #ffa52f);
-  color: #2c1864;
+  color: #222831;
 }
 
 #services {
@@ -188,10 +188,6 @@ button:hover {
 /* footer */
 
 .newsletter {
-  /*  background: url(img/DTM-landing.jpeg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover; */
   padding: 60px 40px;
   background-color: #eee;
   display: flex;
@@ -258,6 +254,10 @@ address {
   margin-top: 20px;
   font-style: normal;
   font-size: 13px;
+}
+
+address a{
+  color: #eee;
 }
 
 footer > p {
@@ -488,6 +488,8 @@ a:focus,
 
 /* responsive design */
 
+/* tablet view */
+
 @media (max-width: 768px) {
   .container {
     width: 90%;
@@ -537,6 +539,15 @@ a:focus,
     opacity: 0.9;
   }
 
+  .about-us-section,
+  #whyUs {
+    margin: 0 40px;
+  }
+
+  :is(.about-us-section, #whyUs) ul {
+    margin-left: -60px;
+  }
+
   #services {
     padding-top: 30px;
     padding: 20px 0;
@@ -563,58 +574,103 @@ a:focus,
     margin: auto;
   }
 
-  .btn-otherServices {
+  .btn-goto-Services {
     position: relative;
-    left: 40%;
+    left: 70%;
   }
-  .moreServices {
+  .btn-moreServices {
     position: relative;
-    left: 200px;
-  }
-  .footer-div {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin: 30px 10px;
-    text-align: center;
-  }
-  .contact-form {
-    width: 90%;
-    margin-left: 10%;
+    left: 285px;
   }
 
   legend {
-    position: relative;
-    right: 80px;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  .newsletter p {
+    margin-left: 10px;
+  }
+
+  .newsletter-input {
+    width: 90%;
+    padding: 15px;
+    margin-right: -110px;
   }
 
   .btn-subscribe {
-    width: 90%;
+    position: relative;
+    left: 15px;
+    bottom: 15px;
   }
-  .footer-navigation {
-    display: flex;
-    margin-left: 0.5em;
+
+  .quickLinks-div {
+    padding: 40px 60px;
   }
-  .footer-navigation > li a,
-  .footer-navigation > li {
-    padding: 0;
-    margin: 0;
-    font-size: 13px;
+
+  .contact-page {
+    margin: 50px 20px;
   }
-  address {
-    margin-right: 0;
+
+  .contact-info {
+    padding: 20px;
+  }
+  .contact-info > h3 {
+    text-align: left;
+  }
+
+  .contact-info > p {
+    margin: 2px;
+  }
+
+  textarea {
+    width: 40ch;
+  }
+  .btn-contact-form-submit{
+padding: 10px;
+margin-top: -20px;
   }
 }
-
 /* mobile view*/
+
 @media only screen and (max-width: 425px) {
+  .header-section {
+    margin-left: -202px;
+    margin-top: 20px;
+  }
   .topnav {
     display: none;
   }
-  /* need to be worked on */
+  .topnav.active {
+    display: block;
+    background: #393e46;
+    opacity: 0.9;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+  }
+  .topnav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 90px;
+    padding: 10px;
+  }
+  .topnav ul li {
+    padding: 5px 0;
+    font-size: 15px;
+  }
   .hamburger-icon {
     visibility: visible;
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    font-size: 2em;
+    z-index: 1100;
+    cursor: pointer;
   }
+
   .header-section img {
     width: 50px;
     margin-bottom: 20px;
@@ -627,11 +683,11 @@ a:focus,
 
   h2,
   span {
-    font-size: 1.3em;
+    font-size: 1.5em;
     line-height: 30px;
   }
   h3 {
-    font-size: 20px;
+    font-size: 15px;
     margin: 10px 0;
   }
 
@@ -649,7 +705,7 @@ a:focus,
   }
 
   .about-img {
-    margin-top: -280px;
+    margin-top: -250px;
   }
 
   .div-service-grids {
@@ -672,11 +728,49 @@ a:focus,
     width: 100%;
     margin-left: 20px;
   }
-  .moreServices {
+    .btn-goto-Services {
     position: relative;
-    left: 60px;
+    left: 20%;
   }
+  .btn-moreServices {
+    position: relative;
+    left: 135px;
+  }
+  .newsletter {
+    display: block;
+  }
+
+  .newsletter-input {
+    
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  .btn-subscribe {
+    position: relative;
+    left: 10px;
+    top: 1px;
+  }
+
+  .quickLinks-div {
+    padding: 20px;
+    display: block;
+    
+    text-align: center;
+  }
+  .footer-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .footer-navigation li a{
+    margin: 0;
+   
+  }
+
 }
+
 @media only screen and (max-width: 375px) {
   .btn-about {
     font-size: 10px;
