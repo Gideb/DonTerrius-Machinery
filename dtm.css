@@ -14,10 +14,10 @@ body {
   width: 80%;
   margin: auto;
 }
-.hamburger-icon {
+/* .hamburger-icon {
   visibility: hidden;
 }
-
+ */
 .header-section,
 ul {
   display: flex;
@@ -42,6 +42,10 @@ a {
 
 li a:hover {
   color: #222831;
+}
+
+#toggleMenu {
+  visibility: hidden;
 }
 
 /* home page */
@@ -435,6 +439,10 @@ a:focus,
   gap: 10px;
 }
 
+.form-top-mobile-view {
+  display: none;
+}
+
 .contact-form-label {
   font-size: 13px;
   color: #434343;
@@ -635,7 +643,7 @@ a:focus,
 
 @media only screen and (max-width: 425px) {
   .header-section {
-    margin-left: -202px;
+    margin-left: -280px;
     margin-top: 20px;
   }
   .topnav {
@@ -643,11 +651,11 @@ a:focus,
   }
   .topnav.active {
     display: block;
-    background: #393e46;
+    background: #ebebeb;
     opacity: 0.9;
     position: absolute;
     top: 20px;
-    left: 0px;
+    left: 21px;
     width: 90%;
     margin: auto;
     align-items: center;
@@ -655,14 +663,22 @@ a:focus,
   .topnav ul {
     flex-direction: column;
     align-items: center;
-    margin-right: 90px;
-    padding: 10px;
+    text-align: center;
+    margin-left: -0.5px;
   }
   .topnav ul li {
     padding: 5px 0;
+    margin-bottom: 2px;
     font-size: 15px;
+    background-color: #494949;
+    width: 100%;
   }
-  .hamburger-icon {
+
+  .topnav ul li a {
+    color: #dadada;
+  }
+
+  /*  .hamburger-icon {
     visibility: visible;
     position: absolute;
     top: 20px;
@@ -670,6 +686,17 @@ a:focus,
     font-size: 2em;
     z-index: 1100;
     cursor: pointer;
+  } */
+
+  #toggleMenu {
+    visibility: visible;
+    margin: 30px;
+    padding: 2%;
+    background-color: #a76a09;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    border-radius: 3px;
   }
 
   .header-section img {
@@ -679,7 +706,7 @@ a:focus,
 
   .landing-text {
     height: 40vh;
-    padding: 20px;
+    padding-top: 100px;
   }
 
   h2,
@@ -766,6 +793,51 @@ a:focus,
   }
   .footer-navigation li a {
     margin: 0;
+  }
+
+  .contact-page {
+    display: block;
+    box-shadow: 2px 5px 5px 2px #555555;
+  }
+
+  .contact-info {
+    transform: scaleX(-1);
+    background-position: bottom left;
+    background-size: calc(100% - 65%);
+    padding-bottom: 30px;
+  }
+
+  :is(.contact-info > p, .contact-info h3) {
+    transform: scaleX(-1);
+    margin: 0;
+  }
+
+  .form-top {
+    display: none;
+  }
+
+  .form-top-mobile-view {
+    display: block;
+  }
+
+  .contact-form-label {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+  }
+
+  .contact-form-input {
+    width: 95%;
+    margin-top: 5px;
+  }
+
+  textarea {
+    width: 32ch;
+  }
+
+  .btn-contact-form-submit {
+    padding: 8px;
+    font-size: 10px;
   }
 }
 
