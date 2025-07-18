@@ -4,13 +4,6 @@ fetch("header.html")
   .then((data) => {
     document.getElementById("header").innerHTML = data;
 
-    /* const hamburgerBtn = document.getElementById("hamburgerBtn");
-    const mainNav = document.getElementById("mainNav");
-    if (hamburgerBtn && mainNav) {
-      hamburgerBtn.addEventListener("click", () => {
-        mainNav.classList.toggle("active");
-      });
-    } */
     const toggleMenuEl = document.getElementById("toggleMenu");
     const mainNav = document.getElementById("mainNav");
 

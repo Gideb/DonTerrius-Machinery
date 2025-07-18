@@ -14,10 +14,7 @@ body {
   width: 80%;
   margin: auto;
 }
-/* .hamburger-icon {
-  visibility: hidden;
-}
- */
+
 .header-section,
 ul {
   display: flex;
@@ -652,7 +649,7 @@ a:focus,
   .topnav.active {
     display: block;
     background: #ebebeb;
-    opacity: 0.9;
+    opacity: 0.95;
     position: absolute;
     top: 20px;
     left: 21px;
@@ -670,7 +667,7 @@ a:focus,
     padding: 5px 0;
     margin-bottom: 2px;
     font-size: 15px;
-    background-color: #494949;
+    background-color: #393e46;
     width: 100%;
   }
 
@@ -678,20 +675,11 @@ a:focus,
     color: #dadada;
   }
 
-  /*  .hamburger-icon {
-    visibility: visible;
-    position: absolute;
-    top: 20px;
-    right: 22px;
-    font-size: 2em;
-    z-index: 1100;
-    cursor: pointer;
-  } */
-
   #toggleMenu {
     visibility: visible;
     margin: 30px;
-    padding: 2%;
+
+    padding: 2.5%;
     background-color: #a76a09;
     position: absolute;
     right: 25px;
@@ -842,14 +830,132 @@ a:focus,
 }
 
 @media only screen and (max-width: 375px) {
-  .btn-about {
-    font-size: 10px;
-    padding: 15px;
-    position: relative;
-    top: 60px;
+  h2,
+  span {
+    font-size: 1.3em;
+    line-height: 30px;
   }
-  .moreServices {
+  .topnav.active {
+    left: 18px;
+  }
+  .topnav.active a {
+    font-size: 12px;
+  }
+
+  .aboutPage ul,
+  .aboutPage li {
+    margin-left: 70px;
+  }
+
+  .team-member {
+    margin: 3px 20px;
+  }
+
+  .team-member img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border: none;
+  }
+
+  .team-member h4 {
+    font-size: 0.8rem;
+  }
+
+  .team-member p {
+    font-size: 0.75rem;
+  }
+
+  .btn-goto-Services {
     position: relative;
-    left: 50px;
+    left: 15%;
+  }
+  .btn-moreServices {
+    position: relative;
+    left: 110px;
+  }
+
+  .newsletter-input {
+    padding: 10px;
+    margin-top: 8px;
+  }
+
+  .btn-subscribe {
+    position: relative;
+    left: 30px;
+    font-size: 10px;
+  }
+
+  .contact-form-input {
+    width: 98%;
+    margin-top: 5px;
+  }
+
+  textarea {
+    width: 28ch;
+  }
+
+  .btn-contact-form-submit {
+    padding: 8px;
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .header-section {
+    margin-left: -180px;
+    padding-top: 5px;
+  }
+
+  .topnav.active {
+    position: absolute;
+    left: 16px;
+  }
+
+  h2,
+  span {
+    margin-left: -20px;
+  }
+  .landing > p {
+    margin-left: -50px;
+  }
+
+  .btn-goto-Services {
+    position: relative;
+    left: 10%;
+  }
+  .btn-moreServices {
+    position: relative;
+    left: 85px;
+  }
+  .newsletter {
+    padding: 18px;
+  }
+
+  .newsletter-input {
+    width: 92%;
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  .footer-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  :is(.footer-navigation li a, footer a, footer p) {
+    font-size: 10px;
+  }
+  .btn-subscribe {
+    position: relative;
+  }
+
+  textarea {
+    width: 22ch;
+  }
+
+  .btn-contact-form-submit {
+    padding: 8px;
+    font-size: 7px;
   }
 }
