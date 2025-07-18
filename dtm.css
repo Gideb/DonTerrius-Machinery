@@ -493,14 +493,60 @@ a:focus,
 }
 
 /* responsive design */
+@media only screen and (max-width: 1080px) {
+  .container {
+    width: 90%;
+    font-size: 15px;
+  }
+  ul {
+    margin: 40px 0 0 25em;
+  }
+  li {
+    padding-right: 12px;
+    font-size: 15px;
+  }
+  .landing-text {
+    padding-top: 200px;
+    height: 65vh;
+  }
+  .about-text {
+    padding: 10px 50px 60px 50px;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  .btn-goto-Services {
+    position: relative;
+    left: 116%;
+  }
+  .btn-moreServices {
+    position: relative;
+    left: 400px;
+  }
+  .about-us-section,
+  #whyUs {
+    margin: 0 40px;
+  }
+
+  :is(.about-us-section, #whyUs) ul {
+    margin-left: -60px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  .btn-aboutPage-gotoServices {
+    margin-left: -20px;
+  }
+
+  .contact-page {
+    margin: 80px 40px;
+  }
+}
 
 /* tablet view */
 
-@media (max-width: 768px) {
-  .container {
-    width: 90%;
-    font-size: 13px;
-  }
+@media only screen and (max-width: 768px) {
   ul {
     margin: 40px 0 0 10em;
   }
@@ -511,10 +557,7 @@ a:focus,
   .topnav a {
     font-size: 15px;
   }
-  .landing-text {
-    padding-top: 200px;
-    height: 65vh;
-  }
+
   h2,
   span {
     font-size: 2em;
@@ -531,11 +574,6 @@ a:focus,
     width: 90%;
     margin-top: -350px;
   }
-  .about-text {
-    padding: 10px 50px 60px 50px;
-    margin-top: 20px;
-    font-size: 15px;
-  }
 
   .btn-about {
     margin-bottom: 80px;
@@ -543,15 +581,6 @@ a:focus,
     position: relative;
     top: 320px;
     opacity: 0.9;
-  }
-
-  .about-us-section,
-  #whyUs {
-    margin: 0 40px;
-  }
-
-  :is(.about-us-section, #whyUs) ul {
-    margin-left: -60px;
   }
 
   #services {
