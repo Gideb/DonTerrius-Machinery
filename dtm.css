@@ -179,12 +179,12 @@ button:hover {
 
 .btn-moreServices {
   margin-top: 50px;
-  position: absolute;
-  right: 200px;
+  position: relative;
+  left: 515px;
 }
 .btn-goto-Services {
   position: relative;
-  left: 430px;
+  left: 410px;
 }
 
 /* footer */
