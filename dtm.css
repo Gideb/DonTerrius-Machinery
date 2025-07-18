@@ -136,11 +136,10 @@ button:hover {
 
 .div-service-grids {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
-  width: 90%;
-  margin: auto;
-  margin-top: 50px;
+  max-width: 1000px;
+  margin: 50px auto 0 auto;
   justify-content: center;
 }
 
@@ -151,7 +150,7 @@ button:hover {
   text-align: center;
   cursor: pointer;
   background-color: #e0e0e0;
-  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-out;
 }
 
 .service-grid:hover {
@@ -180,11 +179,11 @@ button:hover {
 .btn-moreServices {
   margin-top: 50px;
   position: relative;
-  left: 515px;
+  left: 485px;
 }
 .btn-goto-Services {
   position: relative;
-  left: 410px;
+  left: 400px;
 }
 
 /* footer */
