@@ -11,21 +11,21 @@ body {
 
 .container {
   background-color: white;
-  width: 80%;
+  width: 85%;
   margin: auto;
 }
 
 .header-section,
-ul {
+.topnav ul {
   display: flex;
   justify-content: space-around;
 }
 
-ul {
+.topnav ul {
   margin: 40px 0 0 27em;
 }
 
-li {
+.topnav li {
   list-style: none;
   padding-right: 30px;
   font-weight: bold;
@@ -37,8 +37,8 @@ a {
   color: #e68e02;
 }
 
-li a:hover {
-  color: #222831;
+.topnav li a:hover {
+  color: #141414;
 }
 
 #toggleMenu {
@@ -47,19 +47,28 @@ li a:hover {
 
 /* home page */
 
-.landing {
+header {
   background-image: url(img/DTM-backdrop.png);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
-  height: 75vh;
+  height: 95vh;
+  border-top: 1px solid #eee;
+}
+
+.top-background {
+  background-color: #f5f5f5;
+  border-radius: 13px;
+  display: flex;
+  padding: 0 30px;
+  margin: 30px;
 }
 
 .landing-text {
   text-align: center;
-  padding-top: 300px;
-  padding-left: 60px;
+  padding-top: 200px;
+
   color: #eee;
 }
 
@@ -106,7 +115,7 @@ h3 a:hover {
 }
 
 #services {
-  background-color: #2b2b2b;
+  background-color: #2b3d49;
   padding-top: 50px;
   padding-bottom: 100px;
 }
@@ -195,7 +204,8 @@ button,
 
 .newsletter {
   padding: 60px 40px;
-  background-color: #eee;
+  background-color: #141414;
+  color: #eee;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,6 +218,7 @@ legend {
 
 .newsletter p {
   margin-left: 30px;
+  color: #e58e00;
 }
 
 .newsletter-input {
@@ -221,7 +232,7 @@ legend {
   bottom: 15px;
   padding: 17px;
   background: none;
-  color: black;
+  color: #141414;
 }
 
 .btn-subscribe:hover {
@@ -229,51 +240,59 @@ legend {
   color: #7a7a7a;
 }
 
-.quickLinks-div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 100px;
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-around;
   color: white;
-  background-color: #393e46;
+  padding: 30px;
 }
+
+footer {
+  background-color: #141414;
+}
+
+footer li {
+  list-style: none;
+}
+
+address,
 footer li a {
   color: #eee;
-  margin-left: 40px;
-  font-size: 12px;
-  font-weight: normal;
+  font-size: 11px;
 }
 
 footer a:hover {
   color: #ffa52f;
 }
 
-.footer-navigation {
-  display: block;
-  margin-left: -2.2em;
-}
-
 h5 {
   color: #e58e00;
+  font-weight: normal;
+  font-size: 15px;
 }
 
 address {
-  margin-top: 20px;
   font-style: normal;
-  font-size: 13px;
 }
 
 address a {
   color: #eee;
 }
 
-footer > p {
+.footer-socials img {
+  width: 15px;
+  margin-right: 5px;
+}
+
+.copyright-message {
   text-align: center;
-  color: whitesmoke;
-  background-color: #222831;
-  padding: 12px;
-  font-size: 12px;
-  margin-bottom: -10px;
+  justify-content: center;
+  color: #eee;
+  padding-bottom: 5px;
+  font-size: 11px;
+  margin-top: 20px;
+  border-bottom: 1px solid #eee;
 }
 
 /* about page */
@@ -308,7 +327,7 @@ footer > p {
 
 .team-section {
   padding: 40px 20px;
-  background-color: #393e46;
+  background-color: #eee;
   text-align: center;
 }
 
@@ -325,7 +344,7 @@ footer > p {
 }
 
 .team-member {
-  background: #e0e0e0;
+  background: whitesmoke;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -333,7 +352,7 @@ footer > p {
 }
 
 .team-member:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
 }
 
 .team-member img {
@@ -396,7 +415,7 @@ hr {
 }
 
 .contact-info {
-  background-color: #2c1864;
+  background-color: #2b3d49;
   color: white;
   padding: 50px;
   border-radius: 20px;
@@ -406,7 +425,8 @@ hr {
   background-position: bottom;
 }
 .contact-info > h3 {
-  margin-right: 100px;
+  margin-right: 90px;
+  text-align: left;
 }
 
 .contact-info > p {
