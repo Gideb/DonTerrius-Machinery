@@ -204,20 +204,20 @@ button,
 
 .newsletter {
   padding: 60px 40px;
-  background-color: #141414;
+  background-color: #141414 ;
   color: #eee;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 legend {
-  font-family: "abnes", sans-serif;
+  font-family: "abnes";
   font-size: 25px;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 .newsletter p {
-  margin-left: 30px;
+  margin-left: 50px;
   color: #e58e00;
 }
 
