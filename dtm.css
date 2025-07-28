@@ -26,7 +26,7 @@ body {
 }
 
 .topnav ul {
-  margin: 50px 0 0 27em;
+  margin: 30px 0 0 27em;
 }
 
 .topnav li {
@@ -107,6 +107,8 @@ h3 {
   text-align: center;
   margin: 20px 0;
   cursor: pointer;
+  font-family: "against", "inter";
+  text-transform: uppercase;
 }
 
 h3 a {
@@ -170,7 +172,7 @@ h3 a:hover {
 .btn-moreServices {
   margin-top: 50px;
   position: relative;
-  left: 46%;
+  left: 45.2%;
 }
 .btn-grid,
 .btn-about {
@@ -318,11 +320,6 @@ address a {
   padding-top: 20px;
 }
 
-.aboutPage h3 {
-  font-family: "against";
-  color: #e68e02;
-}
-
 .aboutPage ul,
 .aboutPage li {
   margin-left: 100px;
@@ -433,20 +430,26 @@ hr {
   background-size: calc(100% - 35%);
   background-repeat: no-repeat;
   background-position: bottom;
+  animation: animate-bg 5s linear 2;
+}
+
+@keyframes animate-bg {
+  0% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
 }
 .contact-info > h3 {
   text-align: left;
+  font-family: "poppins";
+  text-transform: capitalize;
 }
 
 .contact-info > p {
   font-size: 15px;
   color: #ccc;
-}
-
-.fa-brands {
-  margin-right: 20px;
-  margin-top: 200px;
-  font-size: 12px;
 }
 
 a:hover,
@@ -531,9 +534,9 @@ a:focus,
     font-size: 15px;
   }
 
-.logo img {
-  width: 80%;
-}
+  .logo img {
+    width: 80%;
+  }
 
   .topnav ul {
     margin: 30px 0 0 18em;
@@ -552,7 +555,7 @@ a:focus,
   }
 
   #services {
-    padding: 80px;
+    padding: 80px 50px;
   }
 
   .div-service-grids {
@@ -592,7 +595,7 @@ a:focus,
     padding: 50px;
   }
   .team-grid {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 
   .btn-aboutPage-gotoServices {
@@ -617,10 +620,9 @@ a:focus,
 /* tablet view */
 
 @media only screen and (max-width: 768px) {
-
-.logo img {
-  width: 55px;
-}
+  .logo img {
+    width: 55px;
+  }
 
   .topnav ul {
     margin: 20px 0 0 10em;
@@ -667,6 +669,10 @@ a:focus,
     font-size: 15px;
   }
 
+  .div-service-grids {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
   .btn-goto-Services {
     margin-right: 115px;
     position: relative;
@@ -674,7 +680,7 @@ a:focus,
   }
   .btn-moreServices {
     position: relative;
-    left: 245px;
+    left: 40%;
   }
 
   legend {
@@ -686,29 +692,14 @@ a:focus,
   }
 
   .newsletter-input {
-    width: 70%;
+    width: 60%;
     margin-right: -90px;
   }
 
   .btn-subscribe {
     position: relative;
-    right: 10px;
-  }
-
-  .quickLinks-div {
-    padding: 40px 60px;
-  }
-
-  .div-service-grids:not(.show-all) .service-grid:nth-child(3) {
-    grid-column: 1 / span 2;
-    justify-self: center;
-    width: 50%;
-  }
-
-  .div-service-grids.show-all {
-    grid-column: auto;
-    justify-self: center;
-    width: 75%;
+    left: 5px;
+    font-size: 12px;
   }
 
   .contact-page {
@@ -737,77 +728,97 @@ a:focus,
 /* mobile view*/
 
 @media only screen and (max-width: 425px) {
-  .header-section {
-    margin-left: -280px;
-    margin-top: 20px;
+  header {
+    background-size: contain;
+    height: 48vh;
+    background-position: top;
   }
+  .top-background {
+    padding: 0 130px;
+    position: relative;
+    right: 5px;
+  }
+
+  .logo img {
+    width: 40px;
+    position: relative;
+    right: 100px;
+  }
+
+  #toggleMenu {
+    visibility: visible;
+    margin: 12px 0;
+    padding: 2px 10px;
+    background-color: #2b3d49;
+    position: relative;
+    left: 100px;
+    bottom: 1px;
+    border-radius: 3px;
+  }
+
   .topnav {
     display: none;
   }
+
   .topnav.active {
     display: block;
     background: #ebebeb;
     opacity: 0.95;
     position: absolute;
-    top: 20px;
-    left: 21px;
+    top: 26px;
+    left: 17px;
     width: 90%;
     margin: auto;
     align-items: center;
   }
+
   .topnav ul {
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-left: -0.5px;
   }
+
   .topnav ul li {
     padding: 5px 0;
     margin-bottom: 2px;
     font-size: 15px;
-    background-color: #393e46;
+    background-color: #2b3d49;
     width: 100%;
   }
 
   .topnav ul li a {
-    color: #dadada;
-  }
-
-  #toggleMenu {
-    visibility: visible;
-    margin: 30px;
-    padding: 2.5%;
-    background-color: #a76a09;
-    position: absolute;
-    right: 25px;
-    top: 10px;
-    border-radius: 3px;
-  }
-
-  .header-section img {
-    width: 50px;
-    margin-bottom: 20px;
+    color: #ffa52f;
   }
 
   .landing-text {
-    height: 30vh;
-    padding-top: 100px;
-    font-size: 0.8em;
+    padding: 80px 30px 0px 40px;
+    text-align: center;
   }
 
   h2,
   span {
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 30px;
+    text-align: center;
   }
   h3 {
-    font-size: 15px;
+    font-size: 13px;
     margin: 10px 0;
   }
 
+  p,
+  .btn-goto-Services,
+  .btn-about,
+  .btn-goto-Services,
+  .btn-moreServices,
+  .btn-grid,
+  .btn-subscribe {
+    font-size: 11px;
+  }
+
   .about-text {
-    padding: 30px;
-    padding-top: 10px;
+    padding: 10px 30px 30px 30px;
     margin-top: 20px;
   }
   .btn-about {
@@ -828,62 +839,79 @@ a:focus,
 
   .div-service-grids {
     display: block;
-    width: 90%;
+    width: 100%;
   }
   .service-grid {
     margin-bottom: 15px;
   }
 
   .div-service-grids:not(.show-all) .service-grid:nth-child(3) {
-    grid-column: auto;
-    width: 95%;
+    width: 100%;
+  }
+
+  .btn-goto-Services {
+    top: 20px;
+    font-size: 9.5px;
+    left: 60px;
+  }
+
+  .btn-moreServices {
+    position: relative;
+    left: 85px;
   }
 
   .contact-form {
     width: 100%;
     margin-left: 20px;
   }
-  .btn-goto-Services {
-    top: 20px;
-    font-size: 9px;
-    left: 60px;
-  }
-  .btn-moreServices {
-    position: relative;
-    left: 90px;
-  }
+
   .newsletter {
     display: block;
+    padding: 50px 10px;
+    text-align: center;
   }
 
   .newsletter-input {
-    padding: 15px;
-    margin-top: 10px;
-    width: 90%;
+    margin-top: 50px;
+    width: 80%;
+    border-radius: 5px;
+    padding: 13px;
+  }
+
+  .newsletter legend {
+    font-size: 20px;
   }
 
   .btn-subscribe {
     position: relative;
-    right: 10px;
-    top: 1px;
+    left: 5px;
+    bottom: 1px;
   }
 
-  .quickLinks-div {
-    padding: 20px;
-    display: block;
+  .footer-links {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
+  address {
+    margin-bottom: 0px;
     text-align: center;
   }
-  .footer-navigation {
-    display: flex;
-    justify-content: center;
+  .mobile-footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
     align-items: center;
-    margin-left: 10px;
+    justify-content: center;
   }
+
   .footer-navigation li a {
     margin: 0;
   }
 
+  .copyright-message {
+    margin-top: 0px;
+  }
   .contact-page {
     display: block;
     box-shadow: 2px 5px 5px 2px #555555;
@@ -899,8 +927,13 @@ a:focus,
   :is(.contact-info > p, .contact-info h3) {
     transform: scaleX(-1);
     margin: 0;
+    font-size: 15px;
   }
 
+  .contact-info p {
+    padding-right: 80px;
+    font-size: 12px;
+  }
   .form-top {
     display: none;
   }
@@ -921,24 +954,39 @@ a:focus,
   }
 
   textarea {
-    width: 32ch;
+    width: 29ch;
   }
 
   .btn-contact-form-submit {
     padding: 8px;
     font-size: 10px;
+    margin-left: 145px;
   }
 
   .team-grid {
-    margin-left: -15px;
+    margin-left: 0px;
+    text-align: center;
   }
 }
 
 @media only screen and (max-width: 375px) {
+  header {
+    background-size: contain;
+    height: 40vh;
+  }
+  .top-background {
+    padding: 0 110px;
+    position: relative;
+    right: 10px;
+  }
+  .landing-text {
+    padding-top: 10px;
+    line-height: normal;
+  }
+
   h2,
   span {
     font-size: 1.3em;
-    line-height: 30px;
   }
   .topnav.active {
     left: 18px;
@@ -950,13 +998,6 @@ a:focus,
   .aboutPage ul,
   .aboutPage li {
     margin-left: 70px;
-  }
-  .team-grid {
-    margin-left: -40px;
-  }
-
-  .team-member {
-    margin: 3px 20px;
   }
 
   .team-member img {
@@ -985,16 +1026,13 @@ a:focus,
     left: 70px;
   }
 
-  .newsletter-input {
-    padding: 10px;
-    width: 100%;
-    margin-top: 8px;
+  .contact-header {
+    margin-top: 10px;
   }
 
-  .btn-subscribe {
-    position: relative;
-    left: 10px;
-    font-size: 10px;
+  .contact-header p {
+    padding: 0 30px;
+    font-size: 12px;
   }
 
   .contact-form-input {
@@ -1003,32 +1041,71 @@ a:focus,
   }
 
   textarea {
-    width: 28ch;
+    width: 25ch;
   }
 
   .btn-contact-form-submit {
-    padding: 8px;
-    font-size: 8px;
+    margin-left: 112px;
   }
 }
 
 @media only screen and (max-width: 320px) {
-  .header-section {
-    margin-left: -180px;
-    padding-top: 5px;
+  header {
+    background-size: contain;
+    height: 40vh;
+  }
+  .top-background {
+    padding: 0 90px;
+    position: inherit;
+    margin: 5px auto;
+  }
+
+  .logo img {
+    width: 30px;
+    position: relative;
+    right: 80px;
+  }
+
+  #toggleMenu {
+    padding: 8px 8px;
+    position: relative;
+    left: 70px;
   }
 
   .topnav.active {
+    display: block;
+    background: #ebebeb;
+    opacity: 0.95;
     position: absolute;
-    left: 16px;
+    top: 25px;
+    left: 80px;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+  }
+
+  .topnav ul {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: -0.5px;
+  }
+
+  .topnav ul li {
+    padding: 5px 0;
+    margin-bottom: 2px;
+    font-size: 15px;
+    background-color: #2b3d49;
+    width: 100%;
+  }
+
+  .mobile-footer {
+    gap: 20px;
   }
 
   h2,
   span {
-    margin-left: -20px;
-  }
-  .landing > p {
-    margin-left: -50px;
+    font-size: 1em;
   }
 
   .btn-goto-Services {
@@ -1039,34 +1116,19 @@ a:focus,
     position: relative;
     left: 85px;
   }
-  .newsletter {
-    padding: 18px;
-  }
 
   .newsletter-input {
     width: 92%;
     font-size: 10px;
     margin-left: 10px;
   }
-  .footer-navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
-  }
-  :is(.footer-navigation li a, footer a, footer p) {
-    font-size: 10px;
-  }
-  .btn-subscribe {
-    position: relative;
-  }
 
   textarea {
-    width: 22ch;
+    width: 20ch;
   }
 
   .btn-contact-form-submit {
-    padding: 8px;
-    font-size: 7px;
+    margin-left: 90px;
+    font-size: 8px;
   }
 }
