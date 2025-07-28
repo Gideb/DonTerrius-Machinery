@@ -290,6 +290,14 @@ address a {
   margin-right: 5px;
 }
 
+  .mobile-footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+
 .copyright-message {
   text-align: center;
   justify-content: center;
@@ -897,13 +905,7 @@ a:focus,
     margin-bottom: 0px;
     text-align: center;
   }
-  .mobile-footer {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-  }
+
 
   .footer-navigation li a {
     margin: 0;
@@ -1052,12 +1054,16 @@ a:focus,
 @media only screen and (max-width: 320px) {
   header {
     background-size: contain;
-    height: 40vh;
+    height: 35vh;
   }
   .top-background {
     padding: 0 90px;
     position: inherit;
     margin: 5px auto;
+  }
+
+  #services {
+    padding-top: 70px;
   }
 
   .logo img {
@@ -1109,12 +1115,16 @@ a:focus,
   }
 
   .btn-goto-Services {
-    position: relative;
-    left: 10%;
+    position: absolute;
+    top: 2100px;
+    left: 113px;
+    font-size: 10px;
+    padding: 10px;
+    text-align: center;
   }
   .btn-moreServices {
     position: relative;
-    left: 85px;
+    left: 45px;
   }
 
   .newsletter-input {
