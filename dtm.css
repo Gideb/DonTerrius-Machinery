@@ -26,7 +26,7 @@ body {
 }
 
 .topnav ul {
-  margin: 30px 0 0 27em;
+  margin: 25px 0 0 25em;
 }
 
 .topnav li {
@@ -65,7 +65,7 @@ header {
   background-color: #f5f5f5;
   border-radius: 13px;
   display: flex;
-  padding: 0 30px;
+  padding: 0 20px;
   margin: 30px;
 }
 
@@ -73,6 +73,10 @@ header {
   text-align: center;
   padding-top: 200px;
   color: #eee;
+}
+
+.logo img {
+  width: 65px;
 }
 
 h2,
@@ -290,13 +294,13 @@ address a {
   margin-right: 5px;
 }
 
-  .mobile-footer {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-  }
+.mobile-footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
 
 .copyright-message {
   text-align: center;
@@ -533,6 +537,48 @@ a:focus,
   background-color: #b6b6b6;
   color: #140246;
   cursor: pointer;
+}
+
+#booking {
+  width: 90%;
+  margin: auto;
+}
+
+#bookingForm {
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 5px 2px 10px 5px #838383;
+  margin: 40px 10px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+}
+
+.booking-label {
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  color: #252525;
+}
+
+.booking-input,
+select {
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+
+#btn-bookEquipment {
+  margin: 20px 60px;
+  padding: 20px 4px;
+}
+ 
+.booking-summary {
+  background: #f8f9fa;
+  padding: 15px;
+  border: 1px dashed #ccc;
+  margin-top: 10px;
+  margin-bottom: 60px;
 }
 
 /* responsive design */
@@ -905,7 +951,6 @@ a:focus,
     margin-bottom: 0px;
     text-align: center;
   }
-
 
   .footer-navigation li a {
     margin: 0;
