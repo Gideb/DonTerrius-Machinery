@@ -43,7 +43,7 @@
             </div>
 
             <div>
-              <label class="booking-label" for="booking-email">Email</label>
+              <label class="booking-label" for="booking-email">Email (optional)</label>
               <input
                 class="booking-input"
                 type="email"
@@ -57,20 +57,19 @@
               <label class="booking-label" for="booking-equipment"
                 >Choose Equipment</label
               >
-              <select name="booking-equipment" id="bookingEquipment">
-                <optgroup label="Heavy Equipment Rental">
-                  <option value="">--Choose--</option>
-                  <option value="bulldozer">Bulldozer</option>
-                  <option value="forklift">Forklift</option>
-                  <option value="grader">Grader</option>
-                  <option value="excavator">Excavator</option>
-                </optgroup>
-                <optgroup label="Haulage Services">
+              <select name="booking-equipment" id="bookingEquipment" required>
+                <option value="">--Choose--</option>
+                <option value="bulldozer">Bulldozer</option>
+                <option value="forklift">Forklift</option>
+                <option value="grader">Grader</option>
+                <option value="excavator">Excavator</option>
+                <!--  <optgroup label="Heavy Equipment Rental"></optgroup> -->
+                <!--   <optgroup label="Haulage Services">
                   <option value="bulldozer">Bulldozer</option>
                   <option value="bulldozer">Forklift</option>
                   <option value="bulldozer">Grader</option>
                   <option value="bulldozer">Excavator</option>
-                </optgroup>
+                </optgroup> -->
               </select>
             </div>
 
@@ -81,6 +80,7 @@
                 type="date"
                 name="start-date"
                 id="startDate"
+                required
               />
             </div>
             <div>
@@ -90,6 +90,7 @@
                 type="date"
                 name="end-date"
                 id="endDate"
+                required
               />
             </div>
 
@@ -102,6 +103,7 @@
                 type="text"
                 name="project-location"
                 id="projectLocation"
+                required
               />
             </div>
 
@@ -110,14 +112,16 @@
             <button type="submit" id="btn-bookEquipment">Book Equipment</button>
           </form>
         </section>
-
-        <div id="bookingSummary" class="booking-summary" style="display: none;"></div>
       </main>
+
+      <div
+        id="bookingSummary"
+        class="booking-summary"
+        style="display: none"
+      ></div>
 
       <div id="footer"></div>
     </div>
     <script src="dtm.js"></script>
   </body>
 </html>
-
-
