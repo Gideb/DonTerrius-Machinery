@@ -59,13 +59,34 @@
               <label class="booking-label" for="booking-equipment"
                 >Choose Equipment</label
               >
+              <?php include 'db.php'; ?>
               <select name="booking-equipment" id="bookingEquipment" required>
                 <option value="">--Choose--</option>
-                <option value="bulldozer">Bulldozer</option>
+                <?php
+    $result = $conn->query("SELECT id, name, type FROM equipment WHERE status = 'available'");
+    while ($row = $result->fetch_assoc()) {
+      echo "<option value='{$row['id']}'>{$row['name']} ({$row['type']})</option>";
+    }
+  ?>
+              <!--   <option value="bulldozer">Bulldozer</option>
                 <option value="forklift">Forklift</option>
                 <option value="grader">Grader</option>
-                <option value="excavator">Excavator</option>
+                <option value="excavator">Excavator</option> -->
               </select>
+
+              <?php
+// filepath: [bookings.php](http://_vscodecontentref_/0)
+
+include 'db.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $equipment_id = $_POST['booking-equipment'];
+    // ...save booking details to a bookings table (not shown here)...
+    // Mark equipment as rented
+    $conn->query("UPDATE equipment SET status = 'rented' WHERE id = $equipment_id");
+}
+?>
+
             </div>
 
             <div>
@@ -118,6 +139,7 @@
    
          <?php include 'footer.php'; ?>
     </div>
-    <script src="dtm-v2.js"></script>
+    <script src="dtm-v3.js"></script>
   </body>
 </html>
+
