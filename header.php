@@ -7,11 +7,11 @@
 
       <nav class="topnav" id="mainNav">
         <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="services.html">SERVICES</a></li>
-          <li><a href="bookings.html">BOOKINGS</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="index.php">HOME</a></li>
+          <li><a href="about.php">ABOUT</a></li>
+          <li><a href="services.php">SERVICES</a></li>
+          <li><a href="bookings.php">BOOKINGS</a></li>
+          <li><a href="contact.php">CONTACT</a></li>
         </ul>
       </nav>
       <div id="toggleMenu"></div>

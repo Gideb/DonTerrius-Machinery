@@ -13,7 +13,8 @@
   </head>
   <body>
     <div class="container">
-      <div id="header"></div>
+   
+         <?php include 'header.php'; ?>
 
       <main>
         <section id="about">
@@ -25,7 +26,7 @@
             />
             <div class="about-text">
               <h3>
-                <a href="about.html">ABOUT US</a>
+                <a href="about.php">ABOUT US</a>
               </h3>
               <p>
                 Don Terrius Machinery offers dependable equipment rentals and
@@ -33,13 +34,13 @@
                 a strong focus on safety and client satisfaction, we help bring
                 your vision to life — efficiently and reliably.
               </p>
-              <a class="btn-about" href="about.html">More About DTM</a>
+              <a class="btn-about" href="about.php">More About DTM</a>
             </div>
           </div>
         </section>
         <section id="services">
           <h3>
-            <a href="services.html">OUR SERVICES</a>
+            <a href="services.php">OUR SERVICES</a>
           </h3>
           <p>
             We offer a wide range of heavy machinery rentals and operation
@@ -54,7 +55,7 @@
                 Rental of bulldozers, forklifts, and other heavy equipment for
                 mining, construction, and more.
               </p>
-              <a class="btn-grid" href="bookings.html">Book Now</a>
+              <a class="btn-grid" href="bookings.php">Book Now</a>
             </div>
             <div class="service-grid">
               <img
@@ -66,7 +67,7 @@
                 Excavation and preparation of sites for construction, mining and
                 other industries.
               </p>
-              <a class="btn-grid" href="bookings.html">Book Now</a>
+              <a class="btn-grid" href="bookings.php">Book Now</a>
             </div>
             <div class="service-grid">
               <img src="img/DTM-maintenance.jpeg" alt="Truck Repairs" />
@@ -75,18 +76,19 @@
                 Regular maintenance and repair services to ensure your equipment
                 runs smoothly.
               </p>
-              <a class="btn-grid" href="bookings.html">Book Now</a>
+              <a class="btn-grid" href="bookings.php">Book Now</a>
             </div>
 
-            <a href="services.html" class="btn-goto-Services"
+            <a href="services.php" class="btn-goto-Services"
               >More About Our Services</a
             >
           </div>
         </section>
       </main>
 
-      <div id="footer"></div>
+   
+         <?php include 'footer.php'; ?>
     </div>
-    <script src="dtm.js" defer></script>
+    <script src="dtm-v2.js" defer></script>
   </body>
 </html>

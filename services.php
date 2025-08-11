@@ -9,7 +9,8 @@
   </head>
   <body>
     <div class="container">
-      <div id="header"></div>
+
+         <?php include 'header.php'; ?>
 
       <main>
         <section id="services">
@@ -27,7 +28,7 @@
                 Rental of bulldozers, forklifts, and other heavy equipment for
                 mining, construction, and more.
               </p>
-              <a class="btn-grid" href="bookings.html">Book Now</a>
+              <a class="btn-grid" href="bookings.php">Book Now</a>
             </div>
             <div class="service-grid">
               <img
@@ -39,7 +40,7 @@
                 Excavation and preparation of sites for construction, mining and
                 other industries.
               </p>
-              <a class="btn-grid" href="bookings.html">Book Now</a>
+              <a class="btn-grid" href="bookings.php">Book Now</a>
             </div>
             <div class="service-grid">
               <img src="img/DTM-maintenance.jpeg" alt="Truck Repairs" />
@@ -48,7 +49,7 @@
                 Regular maintenance and repair services to ensure your equipment
                 runs smoothly.
               </p>
-              <a class="btn-grid" href="bookings.html">Book Now</a>
+              <a class="btn-grid" href="bookings.php">Book Now</a>
             </div>
 
             <div class="service-grid hidden">
@@ -58,7 +59,7 @@
                 With precision and power, we provide efficient and safe
                 demolishing solutions for your buildings.
               </p>
-              <a class="btn-grid" href="bookings.html">Book Now</a>
+              <a class="btn-grid" href="bookings.php">Book Now</a>
             </div>
             <div class="service-grid hidden">
               <img src="img/DTM-haulage.jpeg" alt="haulage truct" />
@@ -67,7 +68,7 @@
                 Timely and Reliable transportation solutions for heavy
                 equipment, materials, and goods to destinations.
               </p>
-              <a class="btn-grid" href="bookings.html">Book Now</a>
+              <a class="btn-grid" href="bookings.php">Book Now</a>
             </div>
             <div class="service-grid hidden">
               <img
@@ -79,7 +80,7 @@
                 From site preparation to project completion, we provide expert
                 building and infrastructure solutions.
               </p>
-              <a class="btn-grid" href="bookings.html">Book Now</a>
+              <a class="btn-grid" href="bookings.php">Book Now</a>
             </div>
             <div class="service-grid hidden">
               <img src="img/DTM-demolition.jpeg" alt="Wrecking Ball Crane" />
@@ -88,7 +89,7 @@
                 With precision and power, we provide efficient and safe
                 demolishing solutions for your buildings.
               </p>
-              <a class="btn-grid" href="bookings.html">Book Now</a>
+              <a class="btn-grid" href="bookings.php">Book Now</a>
             </div>
             <div class="service-grid hidden">
               <img src="img/DTM-DrumCementMixer.jpeg" alt="haulage truct" />
@@ -97,7 +98,7 @@
                 Timely and Reliable transportation solutions for heavy
                 equipment, materials, and goods to destinations.
               </p>
-              <a class="btn-grid" href="bookings.html">Book Now</a>
+              <a class="btn-grid" href="bookings.php">Book Now</a>
             </div>
             <div class="service-grid hidden">
               <img
@@ -109,15 +110,16 @@
                 From site preparation to project completion, we provide expert
                 building and infrastructure solutions.
               </p>
-              <a class="btn-grid" href="bookings.html">Book Now</a>
+              <a class="btn-grid" href="bookings.php">Book Now</a>
             </div>
           </div>
           <button id="showMore" class="btn-moreServices">Show More</button>
         </section>
       </main>
 
-      <div id="footer"></div>
+     
+         <?php include 'footer.php'; ?>
     </div>
-    <script src="dtm.js" defer></script>
+    <script src="dtm-v2.js" defer></script>
   </body>
 </html>

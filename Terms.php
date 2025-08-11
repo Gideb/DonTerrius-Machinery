@@ -13,7 +13,8 @@
   </head>
   <body>
     <div class="container">
-      <div id="header"></div>
+ 
+         <?php include 'header.php'; ?>
       <main>
         <div id="terms">
           <h1>Terms and Conditions</h1>
@@ -141,8 +142,9 @@
           </p>
         </div>
       </main>
-      <div id="footer"></div>
+ 
+         <?php include 'footer.php'; ?>
     </div>
-    <script src="dtm.js"></script>
+    <script src="dtm-v2.js"></script>
   </body>
 </html>

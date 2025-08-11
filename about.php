@@ -13,7 +13,9 @@
   </head>
   <body>
     <div class="container">
-      <div id="header"></div>
+     
+       <?php include 'header.php'; ?>
+      
       <main>
         <div class="aboutPage">
           <section class="about-us-section">
@@ -100,7 +102,7 @@
 
           <section id="services">
             <h3>
-              <a href="services.html">OUR SERVICES</a>
+              <a href="services.php">OUR SERVICES</a>
             </h3>
             <p>
               We offer a wide range of heavy machinery rentals and operation
@@ -114,7 +116,7 @@
                   Rental of bulldozers, forklifts, and other heavy equipment for
                   mining, construction, and more.
                 </p>
-                <a href="bookings.html" class="btn-grid">Book Now</a>
+                <a href="bookings.php" class="btn-grid">Book Now</a>
               </div>
               <div class="service-grid">
                 <img
@@ -126,7 +128,7 @@
                   Excavation and preparation of sites for construction, mining
                   and other industries.
                 </p>
-                <a href="bookings.html" class="btn-grid">Book Now</a>
+                <a href="bookings.php" class="btn-grid">Book Now</a>
               </div>
               <div class="service-grid">
                 <img src="img/DTM-maintenance.jpeg" alt="Truck Repairs" />
@@ -135,11 +137,11 @@
                   Regular maintenance and repair services to ensure your
                   equipment runs smoothly.
                 </p>
-                <a class="btn-grid" href="bookings.html">Book Now</a>
+                <a class="btn-grid" href="bookings.php">Book Now</a>
               </div>
 
               <a
-                href="services.html"
+                href="services.php"
                 class="btn-goto-Services btn-aboutPage-gotoServices"
               >
                 More About Our Services
@@ -173,15 +175,17 @@
               rentals, operations support, or expert advice, contact Don Terrius
               Machinery today and let’s get to work.
             </p>
-            <a href="contact.html" class="btn">
+            <a href="contact.php" class="btn">
               <button>Contact Us</button>
             </a>
           </section>
         </div>
       </main>
 
-      <div id="footer"></div>
+  
+       <?php include 'footer.php'; ?>
     </div>
-    <script src="dtm.js" defer></script>
+    <script src="dtm-v2
+    .js" defer></script>
   </body>
 </html>

@@ -9,7 +9,8 @@
   </head>
   <body>
     <div class="container">
-      <div id="header"></div>
+
+         <?php include 'header.php'; ?>
 
       <div class="contact-form-container">
         <div class="contact-header">
@@ -154,8 +155,8 @@
         </main>
       </div>
 
-      <div id="footer"></div>
+         <?php include 'footer.php'; ?>
     </div>
-    <script src="dtm.js"></script>
+    <script src="dtm-v2.js"></script>
   </body>
 </html>

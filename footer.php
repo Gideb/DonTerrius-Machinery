@@ -53,11 +53,11 @@
         <h5>Navigation</h5>
         <nav>
           <ul class="footer-navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="bookings.html">Bookings</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="services.php">Services</a></li>
+            <li><a href="bookings.php">Bookings</a></li>
+            <li><a href="contact.php">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -65,11 +65,11 @@
       <div>
         <h5>About</h5>
         <div class="footer-about">
-          <li><a href="Terms.html">Terms & Conditions</a></li>
-          <li><a href="Terms.html">Privacy & Policy</a></li>
-          <li><a href="Careers.html">Careers</a></li>
-          <li><a href="Terms.html">Teams</a></li>
-          <li><a href="Blog.html">Our Blog</a></li>
+          <li><a href="Terms.php">Terms & Conditions</a></li>
+          <li><a href="Terms.php">Privacy & Policy</a></li>
+          <li><a href="Careers.php">Careers</a></li>
+          <li><a href="Terms.php">Teams</a></li>
+          <li><a href="Blog.php">Our Blog</a></li>
         </div>
       </div>
     </div>

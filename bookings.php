@@ -9,13 +9,13 @@
   </head>
   <body>
     <div class="container">
-      <div id="header"></div>
-
+    
+  <?php include 'header.php'; ?>
       <main>
         <section id="booking">
           <h3>BOOKING PAGE</h3>
 
-          <form action="" id="bookingForm">
+          <form action="" id="bookingForm" method="post">
             <div>
               <label class="booking-label" for="booking-fullname"
                 >Full Name</label
@@ -115,8 +115,9 @@
         style="display: none"
       ></div>
 
-      <div id="footer"></div>
+   
+         <?php include 'footer.php'; ?>
     </div>
-    <script src="dtm.js"></script>
+    <script src="dtm-v2.js"></script>
   </body>
 </html>
