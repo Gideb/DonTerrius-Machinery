@@ -54,5 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
       this.reset();
     });
-  }
+  };
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+
 });
+

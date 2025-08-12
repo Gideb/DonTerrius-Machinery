@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DTM-CONTACT</title>
-    <link rel="stylesheet" href="dtm.css" />
+    <link rel="stylesheet" href="dtm-v2.css" />
     <link rel="icon" href="img/icon.jpeg" type="image/x-icon" />
   </head>
   <body>

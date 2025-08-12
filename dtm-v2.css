@@ -312,6 +312,13 @@ address a {
   border-bottom: 1px solid #eee;
 }
 
+.copyright-message > span {
+  font-family: "poppins";
+  font-size: 10px;
+  line-height: 1px;
+}
+
+
 /* about page */
 .aboutPage {
   background-image: url(img/DTM-watermark.png);

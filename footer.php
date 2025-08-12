@@ -76,6 +76,6 @@
   </div>
 
   <p class="copyright-message">
-    &copy; 2025 Don Terrius Machinery. All rights reserved.
+    &copy; <span id="year"></span> Don Terrius Machinery. All rights reserved.
   </p>
 </footer>
